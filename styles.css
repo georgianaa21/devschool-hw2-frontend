@@ -9,26 +9,10 @@ body {
 }
 
 header, main, aside, footer {
-    gap: 30px;
+    margin-left: 30px;
 }
 
-nav.container {
-    display:flex;
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
-    align-items: baseline;
-    justify-content: space-around;
-}
-
-.flex-item {
-    flex: 1 0 auto;
-    padding:1rem;
-    border:none;
-    box-sizing: border-box;
-    order:-1;
-}
-
-.flex-main {
+.main {
     flex-grow: 2;
 }
 
@@ -39,6 +23,13 @@ nav.container {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: NanumBrush;
+}
+
+.container {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    display: flex
 }
 
 
