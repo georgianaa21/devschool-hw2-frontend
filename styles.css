@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    background-image: url("Uhmdqp.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    max-width: 1600px;
+    max-height: 1600px;
+    margin:100px;
+}
+
+header, main, aside, footer {
+    gap: 30px;
+}
+
+nav.container {
+    display:flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.flex-item {
+    flex: 1 0 auto;
+    padding:1rem;
+    border:none;
+    box-sizing: border-box;
+    order:-1;
+}
+
+.flex-main {
+    flex-grow: 2;
+}
+
+@font-face {
+    font-family: NanumBrush;
+    src: url(NanumBrushScript-Regular.ttf);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: NanumBrush;
+}
+
+
+a:link, a:visited{
+    font-family: NanumBrush;
+    font-size: 30px;
+    color: rgb(182, 174, 176);
+    text-decoration: none;
+    padding: 8px;
+    background-color: rgb(110, 18, 89);
+    border-radius: 5px;
+}
+
+a:hover {
+    color:rgb(128, 1, 43);
+    background-color: rgb(182, 174, 176);
+}
+
+a:active {
+    color:rgb(128, 1, 43);
+    background-color: #BBB;
+}
+
+nav ul{
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+.sticky{
+    position:sticky;
+    top:0;
+}
+
+aside {
+    max-width: 350px;
+}
+
