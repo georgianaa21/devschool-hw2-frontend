@@ -54,6 +54,7 @@ btn2.appendChild(txt2);
 
 btn1.addEventListener('click', function(e) {
     main.prepend(newArticle);
+    btn1.hidden = true;
 });
 
 btn2.addEventListener('click', function(e) {
